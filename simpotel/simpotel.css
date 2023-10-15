@@ -1,0 +1,138 @@
+body {
+  background: rgb(255, 103, 195);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 103, 195, 1) 0%,
+    rgba(255, 220, 91, 1) 100%
+  );
+  margin: 0;
+  padding: 0;
+  height:95rem
+}
+
+.navbar {
+    z-index: 1;
+    position: fixed;
+  display: flex;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 12px 0;
+  box-shadow: 0px 10px 10px -11px rgba(0,0,0,0.5);
+}
+
+.nav-heading {
+   
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-left: 200px;
+  width: 70%;
+}
+
+.nav-heading a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.nav-icon {
+  display: flex;
+  gap: 15px;
+  margin: auto;
+}
+
+.header-image{
+  width: auto;
+  height: 650px;
+  background-image: url(/images/img1.jpg);
+  background-size: cover ;
+  background-position: center -42px;
+
+}
+
+.content{
+    height: 200px;
+}
+
+.header-img-text{
+    position: relative;
+    top: 215px;
+    left: 75px;
+    width: 37%;
+    background-color: rgba(238, 116, 108, 0.6);
+    padding: 20px 50px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-img-text h1{
+    font-size: 47px;
+    letter-spacing: 2px;
+    margin-bottom: -10px;
+}
+.header-img-text p{
+    letter-spacing: 0.9px;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content{
+  text-align: center;
+}
+.content h1{
+  font-size: 45px;
+  color: #ffffff;
+  letter-spacing: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+}
+.items{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 80%;
+  margin: auto;
+  gap: 100px;
+}
+
+.items img{
+  width: 100%;
+  height:250px ;
+  border-top-right-radius: 60px;
+  object-fit: cover;
+}
+.items h3{
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px;
+}
+.items p{
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.items div{
+  background-color: #ffffff;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  height: 350px;
+  padding: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+
+.button-div{
+  width: auto;
+  margin: 100px;
+}
+.button{
+  padding: 15px;
+  width: 180px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(255,255,255,0.5);
+  color: black;
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
