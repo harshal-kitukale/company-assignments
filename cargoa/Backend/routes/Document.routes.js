@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const authMiddleware = require('../middleware/authMiddleware');
+const authMiddleware = require('../Middleware/authentication.middleware');
 const Document = require('../models/Document.model');
 
 router.post('/submit-document', authMiddleware, async (req, res) => {

@@ -36,27 +36,28 @@
 // });
 
 const express = require('express');
-const mongoose = require('mongoose');
 const authRoutes = require('./routes/Auth.routes');
 const documentRoutes = require('./routes/Document.routes');
 const cors = require("cors");
+const { connection } = require('./db');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
 app.use(cors());
-// Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/cargoa', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+
 
 // Define routes
 app.use('/auth', authRoutes);
 app.use('/document', documentRoutes);
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+app.listen(PORT, async() => {
+  try {
+    await connection
+    console.log(`Server is running on port ${PORT}`);
+    
+  } catch (error) {
+    console.log("server error");
+  }
 });
-
