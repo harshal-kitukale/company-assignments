@@ -6,7 +6,7 @@ const documentSchema = new mongoose.Schema({
   quantity: { type: Number, required: true },
   dateOfShipping: { type: String, required: true },
   vendors: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }],
-  // Add other fields as needed
+  documentName: String,
 });
 
 module.exports = mongoose.model('Document', documentSchema);
